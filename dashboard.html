@@ -1,0 +1,300 @@
+<html>
+ <head>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            height: 100vh;
+            padding-top: 20px;
+            flex-direction: column;
+            
+        }
+        .sidebar a {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+        }
+        .sidebar a:hover {
+            background-color: #e9ecef;
+        }
+        .sidebar .active {
+            color: #007bff;
+        }
+        .content {
+            padding: 20px;
+        }
+        .navbar {
+            background-color: #0d1b4c;
+            color: #fff;
+        }
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
+        .card {
+            border: none;
+            text-align: center;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .card-title {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        .card-text {
+            color: #6c757d;
+        }
+        .footer {
+            background-color: #0d1b4c;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #6f42c1;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+
+        }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     Archer
+    </a>
+    <div class="collapse navbar-collapse">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        <i class="fas fa-cog">
+        </i>
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        <i class="fas fa-user">
+        </i>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-2 sidebar">
+     <a href="#">
+      <i class="fas fa-question-circle">
+      </i>
+      Quizzes
+     </a>
+     <a href="#">
+      <i class="fas fa-user-friends">
+      </i>
+      Mentors
+     </a>
+     <a class="active" href="#">
+      <i class="fas fa-briefcase">
+      </i>
+      Careers
+     </a>
+     <a href="#">
+      <i class="fas fa-info-circle">
+      </i>
+      What is a job?
+     </a>
+     <a href="#">
+      <i class="fas fa-chart-line">
+      </i>
+      Market Insights
+     </a>
+     <div class="mt-4 text-center">
+      <button class="btn btn-custom">
+       <i class="fas fa-bullseye">
+       </i>
+       ARJUNA
+      </button>
+     </div>
+    </div>
+    <div class="col-md-10 content">
+     <ul class="nav nav-tabs">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        INTERESTS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        SKILLSET
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="#">
+        DEMAND
+       </a>
+      </li>
+     </ul>
+     <div class="row mt-4">
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of an accountant" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-cqcQQMWujtoNsw7vnnPNz3bF.png?st=2024-09-07T17%3A49%3A45Z&amp;se=2024-09-07T19%3A49%3A45Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A26%3A06Z&amp;ske=2024-09-07T21%3A26%3A06Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Sz8q5WU4a5ufPiegIOB7WA7KwkJabE9ARreKul6XmCI%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Accountant
+         </h5>
+         <p class="card-text">
+          Skill: 71%
+          <br/>
+          <meter value="0.71">
+          </meter>
+          <br/>
+          Interest: 14%
+          <br/>
+          <meter value="0.14">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a dentist" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-RKCQyi2G00vpJOBkSAjNKZZS.png?st=2024-09-07T17%3A49%3A43Z&amp;se=2024-09-07T19%3A49%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-07T04%3A53%3A27Z&amp;ske=2024-09-08T04%3A53%3A27Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=fiYchQP0GC7hAVsiYElvTMag3TogYBcfFv9DZ5/LL6M%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Dentist
+         </h5>
+         <p class="card-text">
+          Skill: 16%
+          <br/>
+          <meter value="0.16">
+          </meter>
+          <br/>
+          Interest: 70%
+          <br/>
+          <meter value="0.70">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a marketing manager" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-TSR1v047mFgWNRoY9VN9DdIE.png?st=2024-09-07T17%3A49%3A43Z&amp;se=2024-09-07T19%3A49%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A44%3A00Z&amp;ske=2024-09-07T21%3A44%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=dC55pS0ieuRvuVeX7HxAhIH0/MiD3aQXbJLauAjUW%2Bw%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Marketing Manager
+         </h5>
+         <p class="card-text">
+          Skill: 65%
+          <br/>
+          <meter value="0.65">
+          </meter>
+          <br/>
+          Interest: 23%
+          <br/>
+          <meter value="0.23">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a doctor" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-aj87AuE88XgGFCJTCK9ryfhm.png?st=2024-09-07T17%3A49%3A43Z&amp;se=2024-09-07T19%3A49%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A50%3A21Z&amp;ske=2024-09-07T21%3A50%3A21Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ConYx%2BR0esMPU2VWrxae7YfxOWtoLnCPcJ7N2dpXaog%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Doctor
+         </h5>
+         <p class="card-text">
+          Skill: 7%
+          <br/>
+          <meter value="0.07">
+          </meter>
+          <br/>
+          Interest: 79%
+          <br/>
+          <meter value="0.79">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a paramedic" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-aFfpszVNqJds1xMMNcE5pF3P.png?st=2024-09-07T17%3A49%3A43Z&amp;se=2024-09-07T19%3A49%3A43Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T22%3A29%3A18Z&amp;ske=2024-09-07T22%3A29%3A18Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BxKG2OPy48Nwuysjc40DyGGG35OWVhe2SEgtfNWUD%2Bs%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Paramedic
+         </h5>
+         <p class="card-text">
+          Skill: 10%
+          <br/>
+          <meter value="0.10">
+          </meter>
+          <br/>
+          Interest: 49%
+          <br/>
+          <meter value="0.49">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a salesman" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-dz1R2VaOB6t8uX7qC03xoa6j.png?st=2024-09-07T17%3A49%3A45Z&amp;se=2024-09-07T19%3A49%3A45Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A52%3A13Z&amp;ske=2024-09-07T21%3A52%3A13Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ofsHgd919tcKkEM8DnnVsAPYwE20jP4gzP6cRCVEm2s%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Salesman
+         </h5>
+         <p class="card-text">
+          Skill: 70%
+          <br/>
+          <meter value="0.70">
+          </meter>
+          <br/>
+          Interest: 38%
+          <br/>
+          <meter value="0.38">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a lawyer" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-4gWWZQc9TJIeA3EU4JRViNTF.png?st=2024-09-07T17%3A49%3A45Z&amp;se=2024-09-07T19%3A49%3A45Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-06T21%3A49%3A50Z&amp;ske=2024-09-07T21%3A49%3A50Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=4n%2B98ISTFiEa/0HpNIs8X/D8cLPWlVTdcwpNtuG7GFg%3D" width="100"/>
+        <div class="card-body">
+         <h5 class="card-title">
+          Lawyer
+         </h5>
+         <p class="card-text">
+          Skill: 30%
+          <br/>
+          <meter value="0.30">
+          </meter>
+          <br/>
+          Interest: 60%
+          <br/>
+          <meter value="0.60">
+          </meter>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="card">
+        <img alt="Illustration of a human resources professional" class="card-img-top" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user
