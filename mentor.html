@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+            margin-top: 60px;
+        }
+
+        .mentor-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .mentor-card:hover {
+            transform: scale(1.05);
+        }
+
+        .mentor-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        .mentor-details {
+            padding: 20px;
+        }
+
+        .mentor-details h2 {
+            margin: 0;
+            color: #007BFF;
+        }
+
+        .mentor-details p {
+            margin: 5px 0;
+        }
+
+        .mentor-details span {
+            display: block;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .mentor-details a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="careers.html" class="back-button">Back to Careers Page</a>
+    <div class="container">
+        <h1>Choose Your Mentor</h1>
+
+        <div class="mentor-card">
+            <img src="mentor1.jpg" alt="Mentor 1" class="mentor-image">
+            <div class="mentor-details">
+                <h2>Dr. Jane Smith</h2>
+                <p>Specialized in Computer Science</p>
+                <span>Expert in Algorithms and Data Structures</span>
+                <a href="mailto:jane.smith@example.com">Contact</a>
+            </div>
+        </div>
+
+        <div class="mentor-card">
+            <img src="mentor2.jpg" alt="Mentor 2" class="mentor-image">
+            <div class="mentor-details">
+                <h2>Mr. John Doe</h2>
+                <p>Specialized in Data Science</p>
+                <span>Expert in Machine Learning and Statistics</span>
+                <a href="mailto:john.doe@example.com">Contact</a>
+            </div>
+        </div>
+
+        <div class="mentor-card">
+            <img src="mentor3.jpg" alt="Mentor 3" class="mentor-image">
+            <div class="mentor-details">
+                <h2>Ms. Emily Brown</h2>
+                <p>Specialized in Web Development</p>
+                <span>Expert in Frontend and Backend Technologies</span>
+                <a href="mailto:emily.brown@example.com">Contact</a>
+            </div>
+        </div>
+
+        <!-- Add more mentor cards as needed -->
+    </div>
+</body>
+</html>
