@@ -1,0 +1,121 @@
+<html></html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .settings-container {
+            width: 500px;
+            margin: 50px auto;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .settings-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .settings-menu {
+            list-style: none;
+            padding: 0;
+        }
+        .settings-menu li {
+            padding: 15px 0;
+            cursor: pointer;
+        }
+        .settings-menu li.active {
+            background-color: #3e3e3e;
+            border-radius: 5px;
+        }
+        .settings-menu li i {
+            margin-right: 10px;
+        }
+        .settings-content {
+            margin-left: 150px;
+        }
+        .settings-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #3e3e3e;
+        }
+        .settings-item:last-child {
+            border-bottom: none;
+        }
+        .settings-item button {
+            background-color: #3e3e3e;
+            border: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .settings-item button.delete {
+            background-color: #ff4d4d;
+        }
+        .settings-item select, .settings-item input[type="checkbox"] {
+            background-color: #3e3e3e;
+            border: none;
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-container">
+        <div class="settings-header">Settings</div>
+        <div class="d-flex">
+            <ul class="settings-menu">
+                <li class="active"><i class="fas fa-cog"></i> General</li>
+                <li><i class="fas fa-shield-alt"></i> Security</li>
+            </ul>
+            <div class="settings-content">
+                <div class="settings-item">
+                    <span>Theme</span>
+                    <select>
+                        <option>Dark</option>
+                        <option>Light</option>
+                    </select>
+                </div>
+                <div class="settings-item">
+                    <span>Always show code when using data analyst</span>
+                    <input type="checkbox" checked>
+                </div>
+                <div class="settings-item">
+                    <span>Language</span>
+                    <select>
+                        <option>Auto-detect</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                    </select>
+                </div>
+                <div class="settings-item">
+                    <span>Archived chats</span>
+                    <button>Manage</button>
+                </div>
+                <div class="settings-item">
+                    <span>Archive all chats</span>
+                    <button>Archive all</button>
+                </div>
+                <div class="settings-item">
+                    <span>Delete all chats</span>
+                    <button class="delete">Delete all</button>
+                </div>
+                <div class="settings-item">
+                    <span>User Profile</span>
+                    <button><a href="userprofile.html" style="text-decoration: none; color: white;" >View profile</a></button>
+                </div>
+                <div class="settings-item">
+                    <span>Career</span>
+                    <button><a href="careers.html" style="text-decoration: none; color: white;">View career</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
