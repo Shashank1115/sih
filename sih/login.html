@@ -63,9 +63,20 @@
             border: none;
             border-radius: 5px;
             height: 45px;
-        }
+            width: 100%; /* Full width button */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }        
+
         .btn-primary:hover {
             background-color: #0041a8;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: red;
         }
         .social-buttons {
             display: flex;
@@ -119,6 +130,10 @@
         .create-account a:hover {
             text-decoration: underline;
         }
+        a{
+            text-decoration: none;
+            color: green;
+        }
   </style>
  </head>
  <body>
@@ -167,8 +182,8 @@
      </div>
      
      <button class="btn btn-primary" >
-        <a href="dashboard.html"> </a> 
-        Login
+        <a  href="dashboard.html"> Login </a> 
+        
     </button>
 
     </form>
