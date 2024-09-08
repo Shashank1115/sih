@@ -72,7 +72,16 @@
             color: #007BFF;
             font-weight: bold;
         }
-
+        .navbar {
+            background-color: #0d1b4c;
+            color: #fff;
+        }
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+        .navbar .nav-link {
+            color: #fff;
+        }
         .back-button {
             display: block;
             width: 200px;
@@ -98,10 +107,37 @@
     </style>
 </head>
 <body>
-    <a href="careers.html" class="back-button">Back to Careers Page</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">
+             <img src="sih/images/target.png" alt="" style="height: 30px; width: 30px;">
+          Archer
+         </a>
+         <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="settings.html">
+             <i class="fas fa-cog">
+             </i>
+            </a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="userprofile.html">
+             <i class="fas fa-user">
+             </i>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </nav>
+    
     <div class="container">
+        
         <h1>Choose Your Mentor</h1>
-
+<div>
+   <button> <a href="careers.html" class="back-button">Back to Careers Page</a></button>
+</div>
         <div class="mentor-card">
             <img src="sih/images/mentor3.jpg" alt="Mentor 1" class="mentor-image">
             <div class="mentor-details">
