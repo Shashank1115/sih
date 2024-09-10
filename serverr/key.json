@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gifted-pulsar-435117-j7",
+  "private_key_id": "32637a8622ed4c828681e5df9707a2a53b26ddd7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCfMPrj4HcLZ/eS\nAWYrfYFmJopJtGUknuRieKWduzlqbQh4sgl5/vhaK796jrvU3gKRzOujkjxgl6Tk\nfyPoNFlruTtGEy+BiKbS5QRPhLco/1B28ElXVsjYQeI14dzI22IeAYMvlsM2j48n\nSRAsjwRmQ2yQ0ooTuZTrFUbd9QikSv72JxG9mU+PYvwqOqCWoIZD+WL0cCoJ8m7N\nWJ8S8ADpMsp1uLFiGVrbz8BGc1xOl7P7qEPAF42O7i10lPHIZHkX8GnM6Y+PFCTz\nO8MT8a5QrcvhyM8REb1Bj4I+2U9c0vmVy3FBMwv4R4KFUdDuSQqHobhsMdyjL3eF\nj2NZ3cFXAgMBAAECggEAA34HL868a7PFZFp2cAFG2h0bZnirUggUdo/EE2zVQPSV\nQctAwSsxUGPD+M6Yiij0Jb5sL6B0MDvja+fZVSTC/bSIlQXm/hknn8CGLFoDh/k/\nxoS8CDoTkV0ZLohcvmVufgJKwHeUxUwvFclqA2v3yJtXqBye11+rjAKUrwTLIGgQ\ntLMRWjVDl7mY4XWJCN1SoQNkxlMC/RAzWEuDoTgwdCm17unVtHSPfNJlkc8L/FTN\nnwJEO20FTqBDesGsPxvviHqGQ1SPKuGw5d0nAhoaRCpTaUpxPDPRj74hh/Ke5Wev\nGBOBUiwNQt+kdABdB/In9hUc1DNH2izxI7WZb209oQKBgQDXS5lq7EAjU0hhQyO1\nkpagbnn6m/sQHIqygxvs0MmHa2vamD51LiLyuJM/89QC+qTF+SbgqRXNj79WiZn8\nTqIG+LXCu+uvdbJ30U4hwEtFlPXy3gW11RoEw19xzghZFYtos1jWk72inZH9Kmk+\nmQ66UKrPCTXY1nMr691UyRyvLwKBgQC9SeuDvRssP6SlhEzRO6XZHsI0i5YUz0ec\nxMEXBv766ZRsLlVZo0LKv9RNn2j4kziMCkPXyNeAt/DzlOdWGuGrbi6B7/zWTHZA\naAzoeBWwblv5UsZUI8ceBELIZXDl2FRGBjCj4BdhC97IuXdbRQ/5zVzoQC8q4SFR\nHGy+KWJGWQKBgFekn+zGBgobYjCt+0B0Tzs6Hg/mJZtWcyPeeaS7Df9BvKM9LNfZ\nE0MJ3m+/W8RmsmMhXTFBw+1toi+hTn1GqXD7GEsQ4w4HdMKQAyV8OWg3DrRyq5Jt\nEO11d0pF3GIfgiP6NqULebxUNtT/yd5Awp0YL6CemDwQeMwddXmJcVLjAoGAMN6c\nx25TTaFAyNrXWk2kC+I9EYPYQ5cgTgEeOOu9eNpFT4jG0FWuMNpF3aSCXWrk9oLP\n8S4RNVJICxsufrSB/th7eWCUTl9/SDGU44/dSae0ZzJPsflqtv0yoLpP44dueoWu\nmSCJ6Kw/4GLBxfaWoU+75NptUwy8pUxJZu8YSEECgYB3NI0yc4FiNq32vT5g6jce\n9HA4O/1kn5SuXchVFq4eYEd4QZZTnXLs+psjs9SRhnF/y4/v1wnIxAH/oWScy3Qk\n8lirGgKASe5SKK138B9ffOqQNdhD4DHJdjDspSPjLpNg3phcQiSBOZegy9G6gmMg\nfW1Z/OttD0s/wfpaCEZKAw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflowchatbot@gifted-pulsar-435117-j7.iam.gserviceaccount.com",
+  "client_id": "103727037371697064542",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflowchatbot%40gifted-pulsar-435117-j7.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

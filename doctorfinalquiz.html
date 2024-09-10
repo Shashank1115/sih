@@ -1,0 +1,371 @@
+<html></html>
+ <head>
+  <title>
+   Clinical Med Quiz
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #f8f9fa;
+        }
+        .quiz-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .quiz-option {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .quiz-option.correct {
+            background-color: #28a745;
+            color: white;
+        }
+        .quiz-option.incorrect {
+            background-color: #dc3545;
+            color: white;
+        }
+        .quiz-option:hover {
+            background-color: #e9ecef;
+        }
+        .next-question-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .next-question-btn:hover {
+            background-color: #0056b3;
+        }
+        .popular-pages {
+            margin-top: 20px;
+        }
+        .popular-pages a {
+            display: block;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .popular-pages a:hover {
+            background-color: #ced4da;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .sidebar {
+            background-color: white;
+            color:black;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            width: 250px;
+        }
+        .sidebar a {
+            color: black;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .content {
+            margin-left: 270px;
+        }
+        .facts-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .facts-container h4 {
+            margin-bottom: 15px;
+        }
+        .facts-container p {
+            margin-bottom: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+    <h2>
+        Menu
+       </h2>
+       <a href="quizez.html">
+        Quizez
+       </a>
+       <a href="mentor.html">
+    Mentor
+       </a>
+       <a href="careers.html">
+        Careers
+       </a>
+       <a href="#">
+    what is a job?
+       </a>
+       <a href="#">
+        Market Insights
+       </a>
+  </div>
+  <div class="content">
+   <div class="container mt-4">
+    <div class="row">
+     <div class="col-md-8">
+      <div class="quiz-container">
+       <h2>
+        Clinical Medicine Quiz
+       </h2>
+       <div class="progress mb-3">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class="progress-bar" id="progress-bar" role="progressbar" style="width: 10%;">
+        </div>
+       </div>
+       <h5 id="question-number">
+        Question 1/10
+       </h5>
+       <p id="question-text">
+        An abdominal mass may indicate which of the following conditions?
+       </p>
+       <div class="quiz-option" onclick="checkAnswer(this, false)">
+        A. Inflammation of the appendix
+       </div>
+       <div class="quiz-option" onclick="checkAnswer(this, true)">
+        B. Malignancy
+       </div>
+       <div class="quiz-option" onclick="checkAnswer(this, false)">
+        C. Cystitis
+       </div>
+       <div class="quiz-option" onclick="checkAnswer(this, false)">
+        D. Muscle strain
+       </div>
+       <button class="next-question-btn mt-3" onclick="nextQuestion()">
+        Next Question
+        <i class="fas fa-arrow-right">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="facts-container">
+       <h4>
+        Did You Know?
+       </h4>
+       <p>
+        - The average doctor sees between 20-30 patients per day.
+       </p>
+       <p>
+        - The stethoscope was invented in 1816 by French physician René Laennec.
+       </p>
+       <p>
+        - There are over 1 million doctors in the United States.
+       </p>
+       <h4>
+        Trending Topics
+       </h4>
+       <p>
+        - Advances in Telemedicine
+       </p>
+       <p>
+        - The Impact of AI on Healthcare
+       </p>
+       <p>
+        - New Treatments for Chronic Diseases
+       </p>
+       <h4>
+        Statistics
+       </h4>
+       <p>
+        - 75% of doctors use electronic health records.
+       </p>
+       <p>
+        - 60% of medical students are female.
+       </p>
+       <p>
+        - The global healthcare market is worth over $8 trillion.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   const questions = [
+            {
+                text: "An abdominal mass may indicate which of the following conditions?",
+                options: [
+                    { text: "A. Inflammation of the appendix", correct: false },
+                    { text: "B. Malignancy", correct: true },
+                    { text: "C. Cystitis", correct: false },
+                    { text: "D. Muscle strain", correct: false }
+                ]
+            },
+            {
+                text: "Which of the following is a common symptom of diabetes?",
+                options: [
+                    { text: "A. Frequent urination", correct: true },
+                    { text: "B. Hair loss", correct: false },
+                    { text: "C. Skin rash", correct: false },
+                    { text: "D. Blurred vision", correct: false }
+                ]
+            },
+            {
+                text: "What is the primary function of red blood cells?",
+                options: [
+                    { text: "A. Fight infections", correct: false },
+                    { text: "B. Transport oxygen", correct: true },
+                    { text: "C. Clot blood", correct: false },
+                    { text: "D. Produce hormones", correct: false }
+                ]
+            },
+            {
+                text: "Which organ is responsible for filtering blood?",
+                options: [
+                    { text: "A. Heart", correct: false },
+                    { text: "B. Liver", correct: false },
+                    { text: "C. Kidney", correct: true },
+                    { text: "D. Lungs", correct: false }
+                ]
+            },
+            {
+                text: "What is the normal range for adult blood pressure?",
+                options: [
+                    { text: "A. 90/60 mmHg", correct: false },
+                    { text: "B. 120/80 mmHg", correct: true },
+                    { text: "C. 140/90 mmHg", correct: false },
+                    { text: "D. 160/100 mmHg", correct: false }
+                ]
+            },
+            {
+                text: "Which vitamin is essential for blood clotting?",
+                options: [
+                    { text: "A. Vitamin A", correct: false },
+                    { text: "B. Vitamin B12", correct: false },
+                    { text: "C. Vitamin C", correct: false },
+                    { text: "D. Vitamin K", correct: true }
+                ]
+            },
+            {
+                text: "What is the main function of the large intestine?",
+                options: [
+                    { text: "A. Absorb nutrients", correct: false },
+                    { text: "B. Absorb water", correct: true },
+                    { text: "C. Produce bile", correct: false },
+                    { text: "D. Filter toxins", correct: false }
+                ]
+            },
+            {
+                text: "Which hormone regulates blood sugar levels?",
+                options: [
+                    { text: "A. Insulin", correct: true },
+                    { text: "B. Adrenaline", correct: false },
+                    { text: "C. Thyroxine", correct: false },
+                    { text: "D. Cortisol", correct: false }
+                ]
+            },
+            {
+                text: "What is the primary function of platelets?",
+                options: [
+                    { text: "A. Transport oxygen", correct: false },
+                    { text: "B. Fight infections", correct: false },
+                    { text: "C. Clot blood", correct: true },
+                    { text: "D. Produce hormones", correct: false }
+                ]
+            },
+            {
+                text: "Which organ is primarily responsible for detoxification?",
+                options: [
+                    { text: "A. Heart", correct: false },
+                    { text: "B. Liver", correct: true },
+                    { text: "C. Kidney", correct: false },
+                    { text: "D. Lungs", correct: false }
+                ]
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const question = questions[currentQuestionIndex];
+            document.getElementById('question-number').innerText = `Question ${currentQuestionIndex + 1}/10`;
+            document.getElementById('question-text').innerText = question.text;
+            const options = document.querySelectorAll('.quiz-option');
+            options.forEach((option, index) => {
+                option.innerText = question.options[index].text;
+                option.classList.remove('correct', 'incorrect');
+                option.onclick = () => checkAnswer(option, question.options[index].correct);
+            });
+        }
+
+        function checkAnswer(element, isCorrect) {
+            if (isCorrect) {
+                element.classList.add('correct');
+                score++;
+            } else {
+                element.classList.add('incorrect');
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                loadQuestion();
+                document.getElementById('progress-bar').style.width = `${(currentQuestionIndex + 1) * 10}%`;
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            const quizContainer = document.querySelector('.quiz-container');
+            quizContainer.innerHTML = `
+                <h2>Quiz Completed!</h2>
+                <p>Your score is ${score} out of ${questions.length}.</p>
+                <p>Your skill level is: ${getSkillLevel(score)}</p>
+                <p>Your interest in Clinical Medicine is: ${getInterestLevel(score)}</p>
+            `;
+        }
+
+        function getSkillLevel(score) {
+            if (score >= 8) {
+                return 'Expert';
+            } else if (score >= 5) {
+                return 'Intermediate';
+            } else {
+                return 'Beginner';
+            }
+        }
+
+        function getInterestLevel(score) {
+            if (score >= 8) {
+                return 'High';
+            } else if (score >= 5) {
+                return 'Moderate';
+            } else {
+                return 'Low';
+            }
+        }
+
+        window.onload = loadQuestion;
+  </script>
+ </body>
+</html>
